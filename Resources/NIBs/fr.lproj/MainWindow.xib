@@ -12,8 +12,8 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="104"/>
 			<integer value="64"/>
-			<integer value="103"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -465,6 +465,23 @@ aS1kZXNzb3VzLg</string>
 							<float key="IBUIMinimumFontSize">10</float>
 							<int key="IBUITextAlignment">1</int>
 						</object>
+						<object class="IBUIButton" id="509542681">
+							<reference key="NSNextResponder" ref="271019101"/>
+							<int key="NSvFlags">292</int>
+							<string key="NSFrame">{{19, 370}, {279, 74}}</string>
+							<reference key="NSSuperview" ref="271019101"/>
+							<bool key="IBUIOpaque">NO</bool>
+							<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
+							<int key="IBUIContentHorizontalAlignment">0</int>
+							<int key="IBUIContentVerticalAlignment">0</int>
+							<reference key="IBUIFont" ref="163507730"/>
+							<reference key="IBUIHighlightedTitleColor" ref="241754446"/>
+							<object class="NSColor" key="IBUINormalTitleColor">
+								<int key="NSColorSpace">1</int>
+								<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
+							</object>
+							<reference key="IBUINormalTitleShadowColor" ref="861735306"/>
+						</object>
 						<object class="IBUIButton" id="202861855">
 							<reference key="NSNextResponder" ref="271019101"/>
 							<int key="NSvFlags">292</int>
@@ -778,6 +795,15 @@ aS1kZXNzb3VzLg</string>
 					</object>
 					<int key="connectionID">114</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">akosma:</string>
+						<reference key="source" ref="509542681"/>
+						<reference key="destination" ref="664661524"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">117</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -949,40 +975,16 @@ aS1kZXNzb3VzLg</string>
 						<reference key="object" ref="271019101"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="705163990"/>
-							<reference ref="877580268"/>
-							<reference ref="432175514"/>
-							<reference ref="521024095"/>
-							<reference ref="480026902"/>
-							<reference ref="426191730"/>
 							<reference ref="202861855"/>
+							<reference ref="426191730"/>
+							<reference ref="480026902"/>
+							<reference ref="521024095"/>
+							<reference ref="432175514"/>
+							<reference ref="877580268"/>
+							<reference ref="705163990"/>
+							<reference ref="509542681"/>
 						</object>
 						<reference key="parent" ref="483645859"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">106</int>
-						<reference key="object" ref="705163990"/>
-						<reference key="parent" ref="271019101"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">107</int>
-						<reference key="object" ref="877580268"/>
-						<reference key="parent" ref="271019101"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">108</int>
-						<reference key="object" ref="432175514"/>
-						<reference key="parent" ref="271019101"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">109</int>
-						<reference key="object" ref="521024095"/>
-						<reference key="parent" ref="271019101"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">110</int>
-						<reference key="object" ref="480026902"/>
-						<reference key="parent" ref="271019101"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">111</int>
@@ -992,6 +994,36 @@ aS1kZXNzb3VzLg</string>
 					<object class="IBObjectRecord">
 						<int key="objectID">112</int>
 						<reference key="object" ref="426191730"/>
+						<reference key="parent" ref="271019101"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">110</int>
+						<reference key="object" ref="480026902"/>
+						<reference key="parent" ref="271019101"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">109</int>
+						<reference key="object" ref="521024095"/>
+						<reference key="parent" ref="271019101"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">108</int>
+						<reference key="object" ref="432175514"/>
+						<reference key="parent" ref="271019101"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">107</int>
+						<reference key="object" ref="877580268"/>
+						<reference key="parent" ref="271019101"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">106</int>
+						<reference key="object" ref="705163990"/>
+						<reference key="parent" ref="271019101"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">116</int>
+						<reference key="object" ref="509542681"/>
 						<reference key="parent" ref="271019101"/>
 					</object>
 				</object>
@@ -1011,6 +1043,7 @@ aS1kZXNzb3VzLg</string>
 					<string>110.IBPluginDependency</string>
 					<string>111.IBPluginDependency</string>
 					<string>112.IBPluginDependency</string>
+					<string>116.IBPluginDependency</string>
 					<string>12.IBEditorWindowLastContentRect</string>
 					<string>12.IBPluginDependency</string>
 					<string>3.CustomClassName</string>
@@ -1039,6 +1072,7 @@ aS1kZXNzb3VzLg</string>
 					<string>UIApplication</string>
 					<string>UIResponder</string>
 					<string>{{83, 373}, {320, 480}}</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -1087,7 +1121,7 @@ aS1kZXNzb3VzLg</string>
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">114</int>
+			<int key="maxID">117</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1154,10 +1188,12 @@ aS1kZXNzb3VzLg</string>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>about:</string>
+							<string>akosma:</string>
 							<string>back:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>

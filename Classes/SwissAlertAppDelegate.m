@@ -59,4 +59,10 @@
     [UIView commitAnimations];    
 }
 
+- (IBAction)akosma:(id)sender
+{
+    NSURL *url = [NSURL URLWithString:@"http://akosma.com/"];
+    [[UIApplication sharedApplication] openURL:url];
+}
+
 @end

@@ -20,5 +20,6 @@
 
 - (IBAction)about:(id)sender;
 - (IBAction)back:(id)sender;
+- (IBAction)akosma:(id)sender;
 
 @end
