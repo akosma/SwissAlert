@@ -1,0 +1,8 @@
+/* The 'cancel' word */
+"Cancel" = "Cancelar";
+
+/* Title of the people picker */
+"Choose a person" = "Elija una persona";
+
+/* Question asked when the user selects a phone number */
+"Use this phone number?" = "Usar este número de teléfono?";
