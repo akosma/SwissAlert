@@ -1,0 +1,16 @@
+--- 
+javascripts: 
+- base: 
+  - ym4r-gm
+  - wms-gs
+  - prototype
+  - markerGroup
+  - geoRssOverlay
+  - effects
+  - dragdrop
+  - controls
+  - clusterer
+  - application
+stylesheets: 
+- base: 
+  - scaffold

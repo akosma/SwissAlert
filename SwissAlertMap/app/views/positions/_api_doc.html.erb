@@ -1,0 +1,19 @@
+<p><strong>API</strong>: send a POST HTTP request to http://swissalertmap.ch/ with the parameters "latitude" and "longitude":</p>
+
+<pre>
+    curl -F "latitude=46.016" -F "longitude=8.950" http://swissalertmap.ch/
+</pre>
+
+<p>This is the response from the server:</p>
+
+<pre>
+    &lt;position&gt;
+      &lt;code&gt;YBYI&lt;/code&gt;
+      &lt;created-at type=&quot;datetime&quot;&gt;2009-10-28T13:46:39+01:00&lt;/created-at&gt;
+      &lt;id type=&quot;integer&quot;&gt;4&lt;/id&gt;
+      &lt;latitude type=&quot;float&quot;&gt;46.55&lt;/latitude&gt;
+      &lt;longitude type=&quot;float&quot;&gt;8.55&lt;/longitude&gt;
+      &lt;spell&gt;Yankee Bravo Yankee India&lt;/spell&gt;
+      &lt;updated-at type=&quot;datetime&quot;&gt;2009-10-28T13:46:39+01:00&lt;/updated-at&gt;
+    &lt;/position&gt;
+</pre>

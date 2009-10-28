@@ -1,0 +1,503 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:16:23) [POST]
+  Parameters: {"position"=>{}}
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:16:23) [GET]
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:16:13') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 23ms (View: 22, DB: 1) | 200 OK [http://test.host/positions]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."id" = 2053932785) [0m
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:16:23) [GET]
+  Parameters: {"id"=>"2053932785"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:16:45) [POST]
+  Parameters: {"position"=>{}}
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:16:45) [GET]
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:16:35') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/positions]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."id" = 2053932785) [0m
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:16:45) [GET]
+  Parameters: {"id"=>"2053932785"}
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = '20') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:17:13', '20', '2009-10-28 10:17:13', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:17:15) [POST]
+  Parameters: {"position"=>{}}
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:17:15) [GET]
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:17:05') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/positions]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."id" = 2053932785) [0m
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:17:15) [GET]
+  Parameters: {"id"=>"2053932785"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'oe') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:18:05', 'oe', '2009-10-28 10:18:05', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:18:06) [POST]
+  Parameters: {"position"=>{"latitude"=>10.0, "longitude"=>10.0}}
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:18:06) [GET]
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:17:56') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/positions]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."id" = 2053932785) [0m
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:18:06) [GET]
+  Parameters: {"id"=>"2053932785"}
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'n7') LIMIT 1[0m
+  [4;35;1mPosition Create (0.2ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:18:33', 'n7', '2009-10-28 10:18:33', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:18:34) [POST]
+  Parameters: {"position"=>{"latitude"=>10.0, "longitude"=>10.0}}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'hc') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(10.0, '2009-10-28 10:18:34', 'hc', '2009-10-28 10:18:34', 10.0)[0m
+Completed in 95ms (View: 86, DB: 1) | 201 Created [http://test.host/positions?position%5Blatitude%5D=10.0&position%5Blongitude%5D=10.0]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:18:34) [GET]
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:18:24') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/positions]
+  [4;35;1mPosition Load (0.2ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."id" = 2053932785) [0m
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:18:34) [GET]
+  Parameters: {"id"=>"2053932785"}
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'p') LIMIT 1[0m
+  [4;35;1mPosition Create (0.2ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:19:45', 'p', '2009-10-28 10:19:45', NULL)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:19:46) [POST]
+  Parameters: {"position"=>{"latitude"=>10.0, "longitude"=>10.0}}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'h') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(10.0, '2009-10-28 10:19:46', 'h', '2009-10-28 10:19:46', 10.0)[0m
+Completed in 20ms (View: 11, DB: 1) | 201 Created [http://test.host/positions?position%5Blatitude%5D=10.0&position%5Blongitude%5D=10.0]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:19:46) [GET]
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:19:36') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/positions]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:19:46) [GET]
+  Parameters: {"code"=>"ehe4rf"}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."id" = 0) [0m
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = '3s') LIMIT 1[0m
+  [4;35;1mPosition Create (0.2ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:20:14', '3s', '2009-10-28 10:20:14', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:20:16) [POST]
+  Parameters: {"position"=>{"latitude"=>10.0, "longitude"=>10.0}}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'w6') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(10.0, '2009-10-28 10:20:16', 'w6', '2009-10-28 10:20:16', 10.0)[0m
+Completed in 20ms (View: 11, DB: 1) | 201 Created [http://test.host/positions?position%5Blatitude%5D=10.0&position%5Blongitude%5D=10.0]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:20:16) [GET]
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:20:06') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/positions]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:20:16) [GET]
+  Parameters: {"code"=>"ehe4rf"}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."id" = 0) [0m
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'xc') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:21:13', 'xc', '2009-10-28 10:21:13', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:21:15) [POST]
+  Parameters: {"position"=>{"latitude"=>10.0, "longitude"=>10.0}}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'v') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(10.0, '2009-10-28 10:21:15', 'v', '2009-10-28 10:21:15', 10.0)[0m
+Completed in 20ms (View: 11, DB: 1) | 201 Created [http://test.host/positions?position%5Blatitude%5D=10.0&position%5Blongitude%5D=10.0]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:21:15) [GET]
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:21:05') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/positions]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:21:15) [GET]
+  Parameters: {"code"=>"ehe4rf"}
+  [4;35;1mPosition Load (0.2ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'ehe4rf') LIMIT 1[0m
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = '0') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:21:43', '0', '2009-10-28 10:21:43', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:21:44) [POST]
+  Parameters: {"position"=>{"latitude"=>10.0, "longitude"=>10.0}}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = '2') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(10.0, '2009-10-28 10:21:44', '2', '2009-10-28 10:21:44', 10.0)[0m
+Completed in 20ms (View: 10, DB: 1) | 201 Created [http://test.host/positions?position%5Blatitude%5D=10.0&position%5Blongitude%5D=10.0]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:21:44) [GET]
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:21:34') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/positions]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:21:44) [GET]
+  Parameters: {"code"=>"ehe4rf"}
+  [4;35;1mPosition Load (0.2ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'ehe4rf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/positions/show?code=ehe4rf]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'zb') LIMIT 1[0m
+  [4;35;1mPosition Create (0.2ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:22:28', 'zb', '2009-10-28 10:22:28', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:22:30) [POST]
+  Parameters: {"position"=>{"latitude"=>10.0, "longitude"=>10.0}}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'x') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(10.0, '2009-10-28 10:22:30', 'x', '2009-10-28 10:22:30', 10.0)[0m
+Completed in 20ms (View: 11, DB: 1) | 201 Created [http://test.host/positions?position%5Blatitude%5D=10.0&position%5Blongitude%5D=10.0]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:22:30) [GET]
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:22:20') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/positions]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:22:30) [GET]
+  Parameters: {"code"=>"ehe4rf"}
+  [4;35;1mPosition Load (0.2ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'ehe4rf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/positions/show?code=ehe4rf]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'VJ') LIMIT 1[0m
+  [4;35;1mPosition Create (0.2ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:23:25', 'VJ', '2009-10-28 10:23:25', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:23:27) [POST]
+  Parameters: {"position"=>{"latitude"=>10.0, "longitude"=>10.0}}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'D') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(10.0, '2009-10-28 10:23:27', 'D', '2009-10-28 10:23:27', 10.0)[0m
+Completed in 20ms (View: 11, DB: 1) | 201 Created [http://test.host/positions?position%5Blatitude%5D=10.0&position%5Blongitude%5D=10.0]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:23:27) [GET]
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:23:17') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/positions]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:23:27) [GET]
+  Parameters: {"code"=>"ehe4rf"}
+  [4;35;1mPosition Load (0.2ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'ehe4rf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/positions/show?code=ehe4rf]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'OIJ') LIMIT 1[0m
+  [4;35;1mPosition Create (0.2ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:24:17', 'OIJ', '2009-10-28 10:24:17', NULL)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:24:18) [POST]
+  Parameters: {"position"=>{"latitude"=>10.0, "longitude"=>10.0}}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'H0Z') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(10.0, '2009-10-28 10:24:18', 'H0Z', '2009-10-28 10:24:18', 10.0)[0m
+Completed in 20ms (View: 11, DB: 1) | 201 Created [http://test.host/positions?position%5Blatitude%5D=10.0&position%5Blongitude%5D=10.0]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:24:18) [GET]
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:24:08') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/positions]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:24:18) [GET]
+  Parameters: {"code"=>"ehe4rf"}
+  [4;35;1mPosition Load (0.2ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'ehe4rf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/positions/show?code=ehe4rf]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = '9') LIMIT 1[0m
+  [4;35;1mPosition Create (0.2ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:28:14', '9', '2009-10-28 10:28:14', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:28:15) [POST]
+  Parameters: {"latitude"=>10.0, "longitude"=>10.0}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = '5') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(10.0, '2009-10-28 10:28:15', '5', '2009-10-28 10:28:15', 10.0)[0m
+Completed in 20ms (View: 10, DB: 1) | 201 Created [http://test.host/positions?latitude=10.0&longitude=10.0]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:28:15) [GET]
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:28:05') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/positions]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:28:15) [GET]
+  Parameters: {"code"=>"ehe4rf"}
+  [4;35;1mPosition Load (0.2ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'ehe4rf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/positions/show?code=ehe4rf]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'DGU') LIMIT 1[0m
+  [4;35;1mPosition Create (0.2ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:37:24', 'DGU', '2009-10-28 10:37:24', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:37:25) [GET]
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:37:15') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://test.host/]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:37:25) [GET]
+  Parameters: {"code"=>"ehe4rf"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = 'ehe4rf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://test.host/ehe4rf]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'CIYB') LIMIT 1[0m
+  [4;35;1mPosition Create (0.2ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:38:44', 'CIYB', '2009-10-28 10:38:44', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'C') LIMIT 1[0m
+  [4;35;1mPosition Create (0.2ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:39:31', 'C', '2009-10-28 10:39:31', NULL)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'T6Q') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:41:34', 'T6Q', '2009-10-28 10:41:34', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:41:35) [POST]
+  Parameters: {"latitude"=>10.0, "longitude"=>10.0}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'FFG') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(10.0, '2009-10-28 10:41:35', 'FFG', '2009-10-28 10:41:35', 10.0)[0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:41:35) [GET]
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:41:25') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:41:35) [GET]
+  Parameters: {"code"=>"ehe4rf"}
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = 'ehe4rf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/ehe4rf]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'UFGA') LIMIT 1[0m
+  [4;35;1mPosition Create (0.2ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:42:33', 'UFGA', '2009-10-28 10:42:33', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:42:34) [POST]
+  Parameters: {"latitude"=>10.0, "longitude"=>10.0}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'KPXL') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(10.0, '2009-10-28 10:42:34', 'KPXL', '2009-10-28 10:42:34', 10.0)[0m
+Completed in 40ms (View: 31, DB: 1) | 201 Created [http://test.host/?latitude=10.0&longitude=10.0]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:42:34) [GET]
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:42:24') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:42:34) [GET]
+  Parameters: {"code"=>"ehe4rf"}
+  [4;35;1mPosition Load (0.2ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'ehe4rf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/ehe4rf]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = '9IKX') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:44:11', '9IKX', '2009-10-28 10:44:11', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:44:12) [POST]
+  Parameters: {"latitude"=>10.0, "longitude"=>10.0}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'P4W8') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(10.0, '2009-10-28 10:44:12', 'P4W8', '2009-10-28 10:44:12', 10.0)[0m
+Completed in 20ms (View: 11, DB: 2) | 201 Created [http://test.host/?latitude=10.0&longitude=10.0]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:44:12) [GET]
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:44:02') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:44:12) [GET]
+  Parameters: {"code"=>"ehe4rf"}
+  [4;35;1mPosition Load (0.2ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'ehe4rf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/ehe4rf]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'A8P') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:50:39', 'A8P', '2009-10-28 10:50:39', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:50:40) [POST]
+  Parameters: {"latitude"=>10.0, "longitude"=>10.0}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'RT3') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(10.0, '2009-10-28 10:50:40', 'RT3', '2009-10-28 10:50:40', 10.0)[0m
+Completed in 69ms (View: 59, DB: 1) | 201 Created [http://test.host/?latitude=10.0&longitude=10.0]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:50:40) [GET]
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:50:30') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:50:40) [GET]
+  Parameters: {"code"=>"ehe4rf"}
+  [4;35;1mPosition Load (0.2ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'ehe4rf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/ehe4rf]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = '3I66L') LIMIT 1[0m
+  [4;35;1mPosition Create (0.2ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 10:53:06', '3I66L', '2009-10-28 10:53:06', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 11:53:07) [POST]
+  Parameters: {"latitude"=>10.0, "longitude"=>10.0}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'W') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(10.0, '2009-10-28 10:53:07', 'W', '2009-10-28 10:53:07', 10.0)[0m
+Completed in 22ms (View: 12, DB: 1) | 201 Created [http://test.host/?latitude=10.0&longitude=10.0]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 11:53:07) [GET]
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:52:57') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 11:53:07) [GET]
+  Parameters: {"code"=>"ehe4rf"}
+  [4;35;1mPosition Load (0.2ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'ehe4rf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/ehe4rf]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = '5R9') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(NULL, '2009-10-28 11:17:46', '5R9', '2009-10-28 11:17:46', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 12:17:47) [POST]
+  Parameters: {"latitude"=>10.0, "longitude"=>10.0}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'H') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(10.0, '2009-10-28 11:17:47', 'H', '2009-10-28 11:17:47', 10.0)[0m
+Completed in 22ms (View: 12, DB: 1) | 201 Created [http://test.host/?latitude=10.0&longitude=10.0]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 12:17:48) [GET]
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 12:17:38') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 12:17:48) [GET]
+  Parameters: {"code"=>"ehe4rf"}
+  [4;35;1mPosition Load (0.2ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'ehe4rf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/ehe4rf]
+  [4;36;1mPosition Load (0.2ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'GVXX') LIMIT 1[0m
+  [4;35;1mPosition Create (0.2ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude", "spell") VALUES(NULL, '2009-10-28 13:09:45', 'GVXX', '2009-10-28 13:09:45', NULL, 'Golf Victor Xray Xray')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#create (for 0.0.0.0 at 2009-10-28 14:09:47) [POST]
+  Parameters: {"latitude"=>10.0, "action"=>"create", "controller"=>"positions", "longitude"=>10.0}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'KRBSV') LIMIT 1[0m
+  [4;36;1mPosition Create (0.4ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude", "spell") VALUES(10.0, '2009-10-28 13:09:47', 'KRBSV', '2009-10-28 13:09:47', 10.0, 'Kilo Romeo Bravo Sierra Victor')[0m
+Completed in 48ms (View: 36, DB: 2) | 201 Created [http://test.host/?latitude=10.0&longitude=10.0]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "positions" [0m
+
+
+Processing PositionsController#index (for 0.0.0.0 at 2009-10-28 14:09:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 15:09:47') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Rendered positions/_copyright (0.3ms)
+Rendered positions/_api_doc (0.4ms)
+Completed in 11ms (View: 10, DB: 1) | 200 OK [http://test.host/]
+
+
+Processing PositionsController#show (for 0.0.0.0 at 2009-10-28 14:09:47) [GET]
+  Parameters: {"code"=>"ehe4rf", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'ehe4rf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Rendered positions/_copyright (0.1ms)
+Rendered positions/_api_doc (0.0ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/ehe4rf]

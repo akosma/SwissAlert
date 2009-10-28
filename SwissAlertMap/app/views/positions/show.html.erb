@@ -1,0 +1,9 @@
+<% if @position %>
+    <h2><%= @position.code %> = <%= "latitude: #{@position.latitude}; longitude: #{@position.longitude}" %> (<%= @position.creation_time %>)</h2>
+    <h3><%= @position.spell %></h3>
+<% else %>
+    <h2>Position not found.</h2>
+<% end %>
+
+<%= @map.to_html %>
+<%= @map.div(:width => 950, :height => 650) %>

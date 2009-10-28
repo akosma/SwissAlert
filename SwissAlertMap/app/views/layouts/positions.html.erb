@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>SwissAlert Map</title>
+  <%= javascript_include_merged :base %>
+  <%= stylesheet_link_merged :base %>
+  <%= GMap.header %>
+</head>
+<body>
+
+<h1><a href="/">SwissAlert Map</a></h1>
+
+<form action="/" method="get" accept-charset="utf-8">
+    <h2></h2>
+    <p><label for="code">Enter Position Code:</label><input type="text" name="code" value="" id="code"><input type="submit" value="Continue &rarr;"></p>
+</form>
+
+<%= set_focus_to_id 'code' %>
+
+<%= yield %>
+
+<%= render :partial => 'copyright' %>
+
+</body>
+</html>

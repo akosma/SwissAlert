@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  latitude: 10.0
+  longitude: 10.0
+  code: ehe4rf
+
+two:
+  latitude: 20.0
+  longitude: 20.0
+  code: abc1

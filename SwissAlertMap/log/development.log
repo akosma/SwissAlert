@@ -1,0 +1,3144 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePositions (20091028094441)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("positions")[0m
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 10:52:20) [GET]
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/positions]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 10:53:19) [GET]
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/positions]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 10:53:53) [GET]
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/positions]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 10:55:49) [GET]
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/positions]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 10:55:56) [GET]
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/positions]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:01:29) [GET]
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/positions]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:07:26) [GET]
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:07:16') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 31ms (View: 1, DB: 0) | 200 OK [http://localhost/positions]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePositions (20091028094441)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("positions")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (4.1ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:30:54) [GET]
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:30:44') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 77ms (View: 13, DB: 0) | 200 OK [http://localhost/positions]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:31:28) [GET]
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:31:18') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/positions]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:32:06) [GET]
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:31:56') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:32:18) [GET]
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:32:08') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 11:32:21) [GET]
+
+ActionController::RoutingError (No route matches "/asdf%20sadf" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 11:34:08) [GET]
+
+ActionController::RoutingError (No route matches "/asdf%20sadf" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 11:34:09) [GET]
+
+ActionController::RoutingError (No route matches "/asdf%20sadf" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:34:12) [GET]
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:34:02') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:34:25) [GET]
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:34:15') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:34:30) [GET]
+  Parameters: {"code"=>"604"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = '604') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.latitude):
+  app/controllers/positions_controller.rb:46:in `create_map_for_positions'
+  app/controllers/positions_controller.rb:45:in `each'
+  app/controllers/positions_controller.rb:45:in `create_map_for_positions'
+  app/controllers/positions_controller.rb:15:in `show'
+
+Rendered rescues/_trace (28.2ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:34:56) [GET]
+  Parameters: {"code"=>"604"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = '604') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_html) on line #1 of app/views/positions/show.html.erb:
+1: <%= @map.to_html %>
+2: <%= @map.div(:width => 950, :height => 650) %>
+
+    app/views/positions/show.html.erb:1
+    app/controllers/positions_controller.rb:19:in `show'
+
+Rendered rescues/_trace (100.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:35:04) [GET]
+  Parameters: {"code"=>"604"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = '604') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_html) on line #1 of app/views/positions/show.html.erb:
+1: <%= @map.to_html %>
+2: <%= @map.div(:width => 950, :height => 650) %>
+
+    app/views/positions/show.html.erb:1
+    app/controllers/positions_controller.rb:21:in `show'
+
+Rendered rescues/_trace (35.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:35:15) [GET]
+  Parameters: {"code"=>"604"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = '604') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_html) on line #1 of app/views/positions/index.html.erb:
+1: <%= @map.to_html %>
+2: <%= @map.div(:width => 950, :height => 650) %>
+
+    app/views/positions/index.html.erb:1
+    app/controllers/positions_controller.rb:18:in `show'
+
+Rendered rescues/_trace (32.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:35:28) [GET]
+  Parameters: {"code"=>"604"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = '604') LIMIT 1[0m
+Rendering positions/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_html) on line #1 of app/views/positions/show.html.erb:
+1: <%= @map.to_html %>
+2: <%= @map.div(:width => 950, :height => 650) %>
+
+    app/views/positions/show.html.erb:1
+    app/controllers/positions_controller.rb:18:in `show'
+
+Rendered rescues/_trace (31.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:35:34) [GET]
+  Parameters: {"code"=>"604"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = '604') LIMIT 1[0m
+Rendering positions/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_html) on line #1 of app/views/positions/show.html.erb:
+1: <%= @map.to_html %>
+2: <%= @map.div(:width => 950, :height => 650) %>
+
+    app/views/positions/show.html.erb:1
+    app/controllers/positions_controller.rb:18:in `show'
+
+Rendered rescues/_trace (31.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:35:35) [GET]
+  Parameters: {"code"=>"604"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = '604') LIMIT 1[0m
+Rendering positions/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_html) on line #1 of app/views/positions/show.html.erb:
+1: <%= @map.to_html %>
+2: <%= @map.div(:width => 950, :height => 650) %>
+
+    app/views/positions/show.html.erb:1
+    app/controllers/positions_controller.rb:18:in `show'
+
+Rendered rescues/_trace (32.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:36:32) [GET]
+  Parameters: {"code"=>"604"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = '604') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.latitude):
+  app/controllers/positions_controller.rb:46:in `create_map_for_positions'
+  app/controllers/positions_controller.rb:45:in `each'
+  app/controllers/positions_controller.rb:45:in `create_map_for_positions'
+  app/controllers/positions_controller.rb:15:in `show'
+
+Rendered rescues/_trace (26.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:37:08) [GET]
+  Parameters: {"code"=>"604"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = '604') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/604]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 11:41:09) [GET]
+
+ActionController::RoutingError (No route matches "/604" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:42:36) [GET]
+  Parameters: {"code"=>"604"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = '604') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/604]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:42:40) [GET]
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:42:30') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:47:51) [GET]
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:47:41') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:47:53) [GET]
+  Parameters: {"code"=>"asdfas d"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'asdfas d') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 72ms (View: 68, DB: 0) | 200 OK [http://localhost/asdfas%20d]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (54.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:50:40) [GET]
+  Parameters: {"code"=>"asdfas d"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = 'asdfas d') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/asdfas%20d]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:53:11) [GET]
+  Parameters: {"code"=>"asdfas d"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'asdfas d') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/asdfas%20d]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:53:41) [GET]
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:53:31') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:54:14) [GET]
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:54:04') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:55:28) [GET]
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:55:18') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:55:33) [GET]
+  Parameters: {"position_code"=>"asdfasdf"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:55:23') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/?position_code=asdfasdf]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:56:26) [GET]
+  Parameters: {"position_code"=>"asdfasdf"}
+  [4;36;1mPosition Load (0.5ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" IS NULL) LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/index
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/positions_controller.rb:5:in `index'
+
+Rendered rescues/_trace (26.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:56:36) [GET]
+  Parameters: {"position_code"=>"asdfasdf"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" IS NULL) LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/index
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/positions_controller.rb:5:in `index'
+
+Rendered rescues/_trace (26.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:57:04) [GET]
+  Parameters: {"position_code"=>"asdfasdf"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" IS NULL) LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/index
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/positions_controller.rb:5:in `index'
+
+Rendered rescues/_trace (93.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:57:05) [GET]
+  Parameters: {"position_code"=>"asdfasdf"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" IS NULL) LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/index
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/positions_controller.rb:5:in `index'
+
+Rendered rescues/_trace (26.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:57:10) [GET]
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:57:00') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:57:11) [GET]
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:57:01') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:57:14) [GET]
+  Parameters: {"position_code"=>"qwerqwr"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" IS NULL) LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/index
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/positions_controller.rb:5:in `index'
+
+Rendered rescues/_trace (88.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:58:02) [GET]
+  Parameters: {"position_code"=>"qwerqwr"}
+Redirected to http://localhost:3000/
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/?position_code=qwerqwr]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:58:02) [GET]
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:57:52') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:58:08) [GET]
+  Parameters: {"position_code"=>"werqwre"}
+Redirected to http://localhost:3000/
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/?position_code=werqwre]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:58:08) [GET]
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:57:58') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:58:10) [GET]
+  Parameters: {"position_code"=>"fsfgsdgfs"}
+Redirected to http://localhost:3000/
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/?position_code=fsfgsdgfs]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:58:10) [GET]
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:58:00') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:58:43) [GET]
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:58:33') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:58:46) [GET]
+  Parameters: {"position_code"=>"asdfasdf"}
+Redirected to http://localhost:3000/asdfasdf
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/?position_code=asdfasdf]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:58:46) [GET]
+  Parameters: {"code"=>"asdfasdf"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'asdfasdf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/asdfasdf]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:58:51) [GET]
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:58:41') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:58:54) [GET]
+  Parameters: {"position_code"=>"werqwrewq"}
+Redirected to http://localhost:3000/werqwrewq
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=werqwrewq]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:58:54) [GET]
+  Parameters: {"code"=>"werqwrewq"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'werqwrewq') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/werqwrewq]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:58:55) [GET]
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:58:45') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:59:26) [GET]
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 11:59:16') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 11:59:29) [GET]
+  Parameters: {"position_code"=>"qwerqwer"}
+Redirected to http://localhost:3000/qwerqwer
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=qwerqwer]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:59:29) [GET]
+  Parameters: {"code"=>"qwerqwer"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = 'qwerqwer') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/qwerqwer]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:59:48) [GET]
+  Parameters: {"code"=>"qwerqwer"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'qwerqwer') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/qwerqwer]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 11:59:52) [GET]
+  Parameters: {"code"=>"qwerqwer", "position_code"=>"wasdfasdf"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = 'qwerqwer') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/qwerqwer?position_code=wasdfasdf]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:00:02) [GET]
+  Parameters: {"code"=>"qwerqwer", "position_code"=>"wasdfasdf"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'qwerqwer') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/qwerqwer?position_code=wasdfasdf]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:00:04) [GET]
+  Parameters: {"position_code"=>"werqerq"}
+Redirected to http://localhost:3000/werqerq
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=werqerq]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:00:04) [GET]
+  Parameters: {"code"=>"werqerq"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = 'werqerq') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/werqerq]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:00:06) [GET]
+  Parameters: {"position_code"=>"wwertwert"}
+Redirected to http://localhost:3000/wwertwert
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/?position_code=wwertwert]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:00:06) [GET]
+  Parameters: {"code"=>"wwertwert"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'wwertwert') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/wwertwert]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:00:08) [GET]
+  Parameters: {"position_code"=>"fghdfgh"}
+Redirected to http://localhost:3000/fghdfgh
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=fghdfgh]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:00:08) [GET]
+  Parameters: {"code"=>"fghdfgh"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = 'fghdfgh') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/fghdfgh]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:00:09) [GET]
+  Parameters: {"position_code"=>"cvbncvbn"}
+Redirected to http://localhost:3000/cvbncvbn
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=cvbncvbn]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:00:09) [GET]
+  Parameters: {"code"=>"cvbncvbn"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'cvbncvbn') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/cvbncvbn]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:00:11) [GET]
+  Parameters: {"position_code"=>"qwerqwre"}
+Redirected to http://localhost:3000/qwerqwre
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/?position_code=qwerqwre]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:00:11) [GET]
+  Parameters: {"code"=>"qwerqwre"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = 'qwerqwre') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/qwerqwre]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:00:13) [GET]
+  Parameters: {"position_code"=>"bvnmvbmn"}
+Redirected to http://localhost:3000/bvnmvbmn
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=bvnmvbmn]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:00:13) [GET]
+  Parameters: {"code"=>"bvnmvbmn"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'bvnmvbmn') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/bvnmvbmn]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:03:39) [GET]
+  Parameters: {"code"=>"bvnmvbmn"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = 'bvnmvbmn') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+
+ActionView::TemplateError (undefined method `javascript_include_merged' for #<ActionView::Base:0x10362c628>) on line #8 of app/views/layouts/positions.html.erb:
+5: <head>
+6:   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+7:   <title>Positions: <%= controller.action_name %></title>
+8:   <%= javascript_include_merged :base %>
+9:   <%= stylesheet_link_merged :base %>
+10:   <%= GMap.header %>
+11: </head>
+
+    app/views/layouts/positions.html.erb:8
+    app/controllers/positions_controller.rb:23:in `show'
+
+Rendered rescues/_trace (35.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:03:49) [GET]
+  Parameters: {"code"=>"bvnmvbmn"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = 'bvnmvbmn') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 87ms (View: 78, DB: 0) | 200 OK [http://localhost/bvnmvbmn]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:03:53) [GET]
+  Parameters: {"position_code"=>"qwerqwer"}
+Redirected to http://localhost:3000/qwerqwer
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=qwerqwer]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:03:53) [GET]
+  Parameters: {"code"=>"qwerqwer"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'qwerqwer') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/qwerqwer]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:03:54) [GET]
+  Parameters: {"position_code"=>"xcvbxcb"}
+Redirected to http://localhost:3000/xcvbxcb
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=xcvbxcb]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:03:54) [GET]
+  Parameters: {"code"=>"xcvbxcb"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = 'xcvbxcb') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/xcvbxcb]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:03:56) [GET]
+  Parameters: {"position_code"=>",.nm,."}
+Redirected to http://localhost:3000/,.nm,.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=%2C.nm%2C.]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 12:03:56) [GET]
+
+ActionController::RoutingError (No route matches "/,.nm,." with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:03:58) [GET]
+  Parameters: {"code"=>"xcvbxcb"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'xcvbxcb') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/xcvbxcb]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:04:02) [GET]
+  Parameters: {"position_code"=>"retwert"}
+Redirected to http://localhost:3000/retwert
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=retwert]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:04:02) [GET]
+  Parameters: {"code"=>"retwert"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = 'retwert') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/retwert]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:04:28) [GET]
+  Parameters: {"code"=>"retwert"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'retwert') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/retwert]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:04:30) [GET]
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 12:04:20') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 12:06:11) [GET]
+  Parameters: {"position_code"=>"asdfasf"}
+
+TypeError (superclass mismatch for class Cookie):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/CGI.rb:774
+  app/controllers/positions_controller.rb:1
+
+Rendered rescues/_trace (29.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 12:06:27) [GET]
+  Parameters: {"position_code"=>"asdfasf"}
+
+TypeError (superclass mismatch for class Cookie):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/CGI.rb:774
+  app/controllers/positions_controller.rb:1
+
+Rendered rescues/_trace (83.7ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 12:08:05) [GET]
+  Parameters: {"position_code"=>"asdfasf"}
+
+TypeError (can't convert Class into String):
+  app/controllers/positions_controller.rb:1
+
+Rendered rescues/_trace (26.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 12:08:09) [GET]
+  Parameters: {"position_code"=>"asdfasf"}
+
+TypeError (superclass mismatch for class Cookie):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/CGI.rb:774
+  app/controllers/positions_controller.rb:1
+
+Rendered rescues/_trace (29.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:08:35) [GET]
+  Parameters: {"position_code"=>"asdfasf"}
+Redirected to http://localhost:3000/asdfasf
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=asdfasf]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:08:35) [GET]
+  Parameters: {"code"=>"asdfasf"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = 'asdfasf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 33ms (View: 25, DB: 0) | 200 OK [http://localhost/asdfasf]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:08:40) [GET]
+  Parameters: {"position_code"=>"sxbb,hghkj.,.mn"}
+Redirected to http://localhost:3000/sxbb,hghkj.,.mn
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=sxbb%2Chghkj.%2C.mn]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 12:08:40) [GET]
+
+ActionController::RoutingError (No route matches "/sxbb,hghkj.,.mn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:08:44) [GET]
+  Parameters: {"code"=>"asdfasf"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'asdfasf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/asdfasf]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:09:20) [GET]
+  Parameters: {"position_code"=>"sxbb,hghkj.,.mn"}
+Redirected to http://localhost:3000/sxbb%252Chghkj.%252C.mn
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=sxbb%2Chghkj.%2C.mn]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 12:09:20) [GET]
+
+ActionController::RoutingError (No route matches "/sxbb%252Chghkj.%252C.mn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:09:27) [GET]
+  Parameters: {"code"=>"asdfasf"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = 'asdfasf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/asdfasf]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:09:31) [GET]
+  Parameters: {"position_code"=>"nb,nbm,"}
+Redirected to http://localhost:3000/nb%252Cnbm%252C
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=nb%2Cnbm%2C]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:09:31) [GET]
+  Parameters: {"code"=>"nb%2Cnbm%2C"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = 'nb%2Cnbm%2C') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/nb%252Cnbm%252C]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:09:37) [GET]
+  Parameters: {"position_code"=>"erwtewrtweffghhllkp0897-"}
+Redirected to http://localhost:3000/erwtewrtweffghhllkp0897-
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=erwtewrtweffghhllkp0897-]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:09:37) [GET]
+  Parameters: {"code"=>"erwtewrtweffghhllkp0897-"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = 'erwtewrtweffghhllkp0897-') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/erwtewrtweffghhllkp0897-]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:09:42) [GET]
+  Parameters: {"position_code"=>"&asdfasdrsdfgahgdh "}
+Redirected to http://localhost:3000/%2526asdfasdrsdfgahgdh+
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=%26asdfasdrsdfgahgdh+]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:09:42) [GET]
+  Parameters: {"code"=>"%26asdfasdrsdfgahgdh+"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = '%26asdfasdrsdfgahgdh+') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/%2526asdfasdrsdfgahgdh+]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:09:49) [GET]
+  Parameters: {"position_code"=>"/.j?dsg/srtwS$352"}
+Redirected to http://localhost:3000/%252F.j%253Fdsg%252FsrtwS%2524352
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=%2F.j%3Fdsg%2FsrtwS%24352]
+
+
+Processing PositionsController#show to j%3Fdsg%2FsrtwS%24352 (for 127.0.0.1 at 2009-10-28 12:09:49) [GET]
+  Parameters: {"code"=>"%2F"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = '%2F') LIMIT 1[0m
+Completed in 4ms (View: 0, DB: 0) | 406 Not Acceptable [http://localhost/%252F.j%253Fdsg%252FsrtwS%2524352]
+
+
+Processing PositionsController#show to j%3Fdsg%2FsrtwS%24352 (for 127.0.0.1 at 2009-10-28 12:10:16) [GET]
+  Parameters: {"code"=>"%2F"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE ("positions"."code" = '%2F') LIMIT 1[0m
+Completed in 5ms (View: 1, DB: 0) | 406 Not Acceptable [http://localhost/%252F.j%253Fdsg%252FsrtwS%2524352]
+
+
+Processing PositionsController#show to j%3Fdsg%2FsrtwS%24352 (for 127.0.0.1 at 2009-10-28 12:10:17) [GET]
+  Parameters: {"code"=>"%2F"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE ("positions"."code" = '%2F') LIMIT 1[0m
+Completed in 4ms (View: 0, DB: 0) | 406 Not Acceptable [http://localhost/%252F.j%253Fdsg%252FsrtwS%2524352]
+
+
+Processing ApplicationController#show to j%3Fdsg%2FsrtwS%24352 (for 127.0.0.1 at 2009-10-28 12:11:04) [GET]
+  Parameters: {"code"=>"%2F"}
+
+SyntaxError (/Users/adrian/Desktop/SwissAlertMap/app/controllers/positions_controller.rb:19: odd number list for Hash
+... ["code = ?", params[:code]] })
+                              ^):
+  
+
+Rendered rescues/_trace (24.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#show to j%3Fdsg%2FsrtwS%24352 (for 127.0.0.1 at 2009-10-28 12:12:12) [GET]
+  Parameters: {"code"=>"%2F"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = '%2F') LIMIT 1[0m
+Completed in 4ms (View: 0, DB: 0) | 406 Not Acceptable [http://localhost/%252F.j%253Fdsg%252FsrtwS%2524352]
+
+
+Processing PositionsController#show to j%3Fdsg%2FsrtwS%24352 (for 127.0.0.1 at 2009-10-28 12:13:45) [GET]
+  Parameters: {"code"=>"%2F"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = '%2F') LIMIT 1[0m
+Completed in 5ms (View: 0, DB: 0) | 406 Not Acceptable [http://localhost/%252F.j%253Fdsg%252FsrtwS%2524352]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 12:14:43) [GET]
+
+ActionController::RoutingError (No route matches "/%252F.j%253Fdsg%252FsrtwS%2524352" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:14:56) [GET]
+  Parameters: {"code"=>"%2Fj%3Fdsg%2FsrtwS%24352"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = '%2Fj%3Fdsg%2FsrtwS%24352') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/%252Fj%253Fdsg%252FsrtwS%2524352]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:15:00) [GET]
+  Parameters: {"position_code"=>"sdf asdfasdf asdf asd"}
+Redirected to http://localhost:3000/sdf+asdfasdf+asdf+asd
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=sdf+asdfasdf+asdf+asd]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:15:00) [GET]
+  Parameters: {"code"=>"sdf+asdfasdf+asdf+asd"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'sdf+asdfasdf+asdf+asd') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/sdf+asdfasdf+asdf+asd]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:15:52) [GET]
+  Parameters: {"position_code"=>"werqw w rwq reqwr "}
+Redirected to http://localhost:3000/werqw+w+rwq+reqwr+
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=werqw+w+rwq+reqwr+]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:15:52) [GET]
+  Parameters: {"code"=>"werqw+w+rwq+reqwr+"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'werqw+w+rwq+reqwr+') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/werqw+w+rwq+reqwr+]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:15:54) [GET]
+  Parameters: {"position_code"=>"sdf sadfsad fasfd "}
+Redirected to http://localhost:3000/sdf+sadfsad+fasfd+
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=sdf+sadfsad+fasfd+]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:15:54) [GET]
+  Parameters: {"code"=>"sdf+sadfsad+fasfd+"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'sdf+sadfsad+fasfd+') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/sdf+sadfsad+fasfd+]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:16:00) [GET]
+  Parameters: {"position_code"=>"     "}
+Redirected to http://localhost:3000/+++++
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=+++++]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:16:00) [GET]
+  Parameters: {"code"=>"+++++"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = '+++++') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/+++++]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:16:09) [GET]
+  Parameters: {"position_code"=>"asfsadfsdf09872/,m4653][."}
+Redirected to http://localhost:3000/asfsadfsdf09872%252F%252Cm4653%255D%255B.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=asfsadfsdf09872%2F%2Cm4653%5D%5B.]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 12:16:09) [GET]
+
+ActionController::RoutingError (No route matches "/asfsadfsdf09872%252F%252Cm4653%255D%255B." with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:16:14) [GET]
+  Parameters: {"code"=>"+++++"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = '+++++') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/+++++]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:16:17) [GET]
+  Parameters: {"position_code"=>"asfsadfsdf09872/,m4653][."}
+Redirected to http://localhost:3000/asfsadfsdf09872%252F%252Cm4653%255D%255B.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=asfsadfsdf09872%2F%2Cm4653%5D%5B.]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 12:16:17) [GET]
+
+ActionController::RoutingError (No route matches "/asfsadfsdf09872%252F%252Cm4653%255D%255B." with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:16:21) [GET]
+  Parameters: {"code"=>"+++++"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = '+++++') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/+++++]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:17:19) [GET]
+  Parameters: {"code"=>"+++++"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = '+++++') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/+++++]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:18:16) [GET]
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 12:18:06') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:18:57) [GET]
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 12:18:47') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:19:38) [GET]
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 12:19:28') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:19:41) [GET]
+  Parameters: {"position_code"=>"asdf asdf as"}
+Redirected to http://localhost:3000/asdf%20asdf%20as
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?position_code=asdf+asdf+as]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:19:41) [GET]
+  Parameters: {"code"=>"asdf asdf as"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'asdf asdf as') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/asdf%20asdf%20as]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:23:27) [GET]
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 12:23:17') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:23:29) [GET]
+  Parameters: {"code"=>"wqwerqwr"}
+Redirected to http://localhost:3000/wqwerqwr
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?code=wqwerqwr]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:23:29) [GET]
+  Parameters: {"code"=>"wqwerqwr"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'wqwerqwr') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/wqwerqwr]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:23:30) [GET]
+  Parameters: {"code"=>"xcvbxcb"}
+Redirected to http://localhost:3000/xcvbxcb
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?code=xcvbxcb]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:23:30) [GET]
+  Parameters: {"code"=>"xcvbxcb"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'xcvbxcb') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/xcvbxcb]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:23:31) [GET]
+  Parameters: {"code"=>"gfhjfghjf"}
+Redirected to http://localhost:3000/gfhjfghjf
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?code=gfhjfghjf]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:23:31) [GET]
+  Parameters: {"code"=>"gfhjfghjf"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'gfhjfghjf') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 66ms (View: 4, DB: 0) | 200 OK [http://localhost/gfhjfghjf]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:23:34) [GET]
+  Parameters: {"code"=>"we565"}
+Redirected to http://localhost:3000/we565
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?code=we565]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:23:34) [GET]
+  Parameters: {"code"=>"we565"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'we565') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/we565]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:23:41) [GET]
+  Parameters: {"code"=>"we565sgsdfgsdg"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'we565sgsdfgsdg') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/we565sgsdfgsdg]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:23:52) [GET]
+  Parameters: {"code"=>"we565sgsdfgsdg"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'we565sgsdfgsdg') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/we565sgsdfgsdg]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 12:28:48) [POST]
+  Parameters: {"latitude"=>"47.383;longitude=8.066"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+
+Rendered rescues/_trace (26.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 12:29:09) [POST]
+  Parameters: {"latitude"=>"47.383;longitude=8.066", "action"=>"create", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'PPKZJ') LIMIT 1[0m
+  [4;35;1mPosition Create (21.8ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(47.383, '2009-10-28 11:29:09', 'PPKZJ', '2009-10-28 11:29:09', NULL)[0m
+Completed in 114ms (View: 84, DB: 22) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:29:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 12:29:12') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:29:27) [GET]
+  Parameters: {"code"=>"PPKZJ", "action"=>"index", "controller"=>"positions"}
+Redirected to http://localhost:3000/PPKZJ
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?code=PPKZJ]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:29:27) [GET]
+  Parameters: {"code"=>"PPKZJ", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'PPKZJ') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/PPKZJ]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 12:30:31) [POST]
+  Parameters: {"latitude"=>"47.383", "action"=>"create", "controller"=>"positions", "longitude"=>"8.066"}
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = '49YO') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(47.383, '2009-10-28 11:30:31', '49YO', '2009-10-28 11:30:31', 8.066)[0m
+Completed in 9ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:30:41) [GET]
+  Parameters: {"code"=>"49YO", "action"=>"index", "controller"=>"positions"}
+Redirected to http://localhost:3000/49YO
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?code=49YO]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:30:41) [GET]
+  Parameters: {"code"=>"49YO", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = '49YO') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 70ms (View: 65, DB: 0) | 200 OK [http://localhost/49YO]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:30:56) [GET]
+  Parameters: {"code"=>"49YO", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = '49YO') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/49YO]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:31:58) [GET]
+  Parameters: {"code"=>"49YO", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = '49YO') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/49YO]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 12:32:35) [POST]
+  Parameters: {"latitude"=>"46.016", "action"=>"create", "controller"=>"positions", "longitude"=>"8.950"}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'KYIK') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(46.016, '2009-10-28 11:32:35', 'KYIK', '2009-10-28 11:32:35', 8.95)[0m
+Completed in 11ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:32:48) [GET]
+  Parameters: {"code"=>"KYIK", "action"=>"index", "controller"=>"positions"}
+Redirected to http://localhost:3000/KYIK
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?code=KYIK]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:32:48) [GET]
+  Parameters: {"code"=>"KYIK", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'KYIK') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/KYIK]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:32:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 12:32:46') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:32:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 12:32:49') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:33:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.5ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 09:46:37') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:27) [GET]
+  Parameters: {"code"=>"x=NaN&y=88&z=8&s=", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.7ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=88&z=8&s=') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/x=NaN&y=88&z=8&s=]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:27) [GET]
+  Parameters: {"code"=>"x=NaN&y=90&z=8&s=", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=90&z=8&s=') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=90&z=8&s=]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:27) [GET]
+  Parameters: {"code"=>"x=NaN&y=92&z=8&s=", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=92&z=8&s=') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=92&z=8&s=]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:27) [GET]
+  Parameters: {"code"=>"x=NaN&y=89&z=8&s=", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=89&z=8&s=') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=89&z=8&s=]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:27) [GET]
+  Parameters: {"code"=>"x=NaN&y=91&z=8&s=", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=91&z=8&s=') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=91&z=8&s=]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:27) [GET]
+  Parameters: {"code"=>"x=NaN&y=88&z=8&s=&tretry=1", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=88&z=8&s=&tretry=1') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=88&z=8&s=&tretry=1]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:28) [GET]
+  Parameters: {"code"=>"x=NaN&y=90&z=8&s=&tretry=1", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=90&z=8&s=&tretry=1') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=90&z=8&s=&tretry=1]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:28) [GET]
+  Parameters: {"code"=>"x=NaN&y=92&z=8&s=&tretry=1", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=92&z=8&s=&tretry=1') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=92&z=8&s=&tretry=1]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:28) [GET]
+  Parameters: {"code"=>"x=NaN&y=89&z=8&s=&tretry=1", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=89&z=8&s=&tretry=1') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=89&z=8&s=&tretry=1]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:28) [GET]
+  Parameters: {"code"=>"x=NaN&y=91&z=8&s=&tretry=1", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=91&z=8&s=&tretry=1') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=91&z=8&s=&tretry=1]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:30) [GET]
+  Parameters: {"code"=>"x=NaN&y=88&z=8&s=", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=88&z=8&s=') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=88&z=8&s=]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:30) [GET]
+  Parameters: {"code"=>"x=NaN&y=90&z=8&s=", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=90&z=8&s=') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=90&z=8&s=]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:30) [GET]
+  Parameters: {"code"=>"x=NaN&y=89&z=8&s=", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=89&z=8&s=') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=89&z=8&s=]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:30) [GET]
+  Parameters: {"code"=>"x=NaN&y=91&z=8&s=", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=91&z=8&s=') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=91&z=8&s=]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:30) [GET]
+  Parameters: {"code"=>"x=NaN&y=92&z=8&s=", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=92&z=8&s=') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 70ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=92&z=8&s=]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:30) [GET]
+  Parameters: {"code"=>"x=NaN&y=88&z=8&s=&tretry=1", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=88&z=8&s=&tretry=1') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=88&z=8&s=&tretry=1]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:30) [GET]
+  Parameters: {"code"=>"x=NaN&y=90&z=8&s=&tretry=1", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=90&z=8&s=&tretry=1') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=90&z=8&s=&tretry=1]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:30) [GET]
+  Parameters: {"code"=>"x=NaN&y=89&z=8&s=&tretry=1", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=89&z=8&s=&tretry=1') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=89&z=8&s=&tretry=1]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:30) [GET]
+  Parameters: {"code"=>"x=NaN&y=91&z=8&s=&tretry=1", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=91&z=8&s=&tretry=1') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=91&z=8&s=&tretry=1]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:30) [GET]
+  Parameters: {"code"=>"x=NaN&y=92&z=8&s=&tretry=1", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=92&z=8&s=&tretry=1') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=92&z=8&s=&tretry=1]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:33) [GET]
+  Parameters: {"code"=>"x=NaN&y=43&z=7&s=", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=43&z=7&s=') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=43&z=7&s=]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:33) [GET]
+  Parameters: {"code"=>"x=NaN&y=46&z=7&s=", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=46&z=7&s=') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=46&z=7&s=]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:33) [GET]
+  Parameters: {"code"=>"x=NaN&y=45&z=7&s=", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=45&z=7&s=') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=45&z=7&s=]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:33) [GET]
+  Parameters: {"code"=>"x=NaN&y=44&z=7&s=", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.6ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=44&z=7&s=') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/x=NaN&y=44&z=7&s=]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:33) [GET]
+  Parameters: {"code"=>"x=NaN&y=47&z=7&s=", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=47&z=7&s=') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=47&z=7&s=]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:33) [GET]
+  Parameters: {"code"=>"x=NaN&y=43&z=7&s=&tretry=1", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=43&z=7&s=&tretry=1') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=43&z=7&s=&tretry=1]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:33) [GET]
+  Parameters: {"code"=>"x=NaN&y=46&z=7&s=&tretry=1", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=46&z=7&s=&tretry=1') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=46&z=7&s=&tretry=1]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:33) [GET]
+  Parameters: {"code"=>"x=NaN&y=45&z=7&s=&tretry=1", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=45&z=7&s=&tretry=1') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/x=NaN&y=45&z=7&s=&tretry=1]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:33) [GET]
+  Parameters: {"code"=>"x=NaN&y=44&z=7&s=&tretry=1", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=44&z=7&s=&tretry=1') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=44&z=7&s=&tretry=1]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:33:33) [GET]
+  Parameters: {"code"=>"x=NaN&y=47&z=7&s=&tretry=1", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.5ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'x=NaN&y=47&z=7&s=&tretry=1') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/x=NaN&y=47&z=7&s=&tretry=1]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:33:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.5ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 09:46:56') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:34:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 12:17:34') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:34:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.6ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 09:47:41') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:34:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.5ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 09:47:42') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:34:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.5ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 09:47:43') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:34:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.6ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 09:47:46') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 65ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:34:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.6ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 09:47:48') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:34:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.5ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 09:47:49') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:34:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.5ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-10-28 09:47:51') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:35:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.5ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 13:35:27') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:35:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.5ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 13:35:29') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:36:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.5ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 13:36:04') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:37:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.5ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 13:37:59') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:38:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.5ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 13:38:47') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:38:51) [GET]
+  Parameters: {"code"=>"49YO", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = '49YO') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/49YO]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:38:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.5ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 13:38:54') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:38:57) [GET]
+  Parameters: {"code"=>"KYIK", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'KYIK') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/KYIK]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:39:00) [GET]
+  Parameters: {"code"=>"KYIK", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'KYIK') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/KYIK]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:41:28) [GET]
+  Parameters: {"code"=>"KYIK", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'KYIK') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/KYIK]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:41:56) [GET]
+  Parameters: {"code"=>"KYIK", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.5ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'KYIK') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 76ms (View: 70, DB: 0) | 200 OK [http://localhost/KYIK]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:42:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.5ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 13:42:26') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:42:33) [GET]
+  Parameters: {"code"=>"KYIK", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'KYIK') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/KYIK]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:42:36) [GET]
+  Parameters: {"code"=>"KYIK", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'KYIK') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/KYIK]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 12:43:14) [POST]
+  Parameters: {"latitude"=>"46.533", "action"=>"create", "controller"=>"positions", "longitude"=>"7.966"}
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = '3VIZK') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(46.533, '2009-10-28 11:43:14', '3VIZK', '2009-10-28 11:43:14', 7.966)[0m
+Completed in 11ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:43:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.5ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 13:43:38') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:43:43) [GET]
+  Parameters: {"code"=>"3VIZK", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = '3VIZK') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/3VIZK]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:44:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.6ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 13:44:09') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 71ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:44:13) [GET]
+  Parameters: {"code"=>"KYIK", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'KYIK') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/KYIK]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:44:36) [GET]
+  Parameters: {"code"=>"KYIK", "action"=>"index", "controller"=>"positions"}
+Redirected to http://localhost:3000/KYIK
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?code=KYIK]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:44:36) [GET]
+  Parameters: {"code"=>"KYIK", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'KYIK') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/KYIK]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 12:45:11) [POST]
+  Parameters: {"latitude"=>"46.200", "action"=>"create", "controller"=>"positions", "longitude"=>"6.150"}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = '0NVA') LIMIT 1[0m
+  [4;36;1mPosition Create (0.5ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(46.2, '2009-10-28 11:45:11', '0NVA', '2009-10-28 11:45:11', 6.15)[0m
+Completed in 11ms (View: 1, DB: 1) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:45:18) [GET]
+  Parameters: {"code"=>"0NVA", "action"=>"index", "controller"=>"positions"}
+Redirected to http://localhost:3000/0NVA
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?code=0NVA]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:45:18) [GET]
+  Parameters: {"code"=>"0NVA", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = '0NVA') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/0NVA]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:48:45) [GET]
+  Parameters: {"code"=>"0NVA", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = '0NVA') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/0NVA]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:49:04) [GET]
+  Parameters: {"code"=>"0NVA", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = '0NVA') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/0NVA]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:49:12) [GET]
+  Parameters: {"code"=>"0NVA", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = '0NVA') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/0NVA]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:49:19) [GET]
+  Parameters: {"code"=>"0NVA", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = '0NVA') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/0NVA]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:49:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.6ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 13:49:28') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:49:32) [GET]
+  Parameters: {"code"=>"3VIZK", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.5ms)[0m   [0mSELECT * FROM "positions" WHERE (code = '3VIZK') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/3VIZK]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:49:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.6ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 13:49:34') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:49:37) [GET]
+  Parameters: {"code"=>"KYIK", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'KYIK') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/KYIK]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:49:39) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.6ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 13:49:39') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 12:49:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.6ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 13:49:59') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:50:22) [GET]
+  Parameters: {"code"=>"49YO", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = '49YO') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/49YO]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 12:53:44) [GET]
+  Parameters: {"code"=>"49YO", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = '49YO') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 75ms (View: 69, DB: 0) | 200 OK [http://localhost/49YO]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:37:13) [GET]
+  Parameters: {"code"=>"49YO", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = '49YO') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/49YO]
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePositions (20091028094441)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("positions")[0m
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:41:16) [POST]
+  Parameters: {"latitude"=>"47.366", "action"=>"create", "controller"=>"positions", "longitude"=>"8.533"}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'PV') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(47.366, '2009-10-28 12:41:16', 'PV', '2009-10-28 12:41:16', 8.533)[0m
+Completed in 10ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:41:18) [POST]
+  Parameters: {"latitude"=>"47.000", "action"=>"create", "controller"=>"positions", "longitude"=>"8.300"}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'GVHE') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(47.0, '2009-10-28 12:41:18', 'GVHE', '2009-10-28 12:41:18', 8.3)[0m
+Completed in 11ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:41:20) [POST]
+  Parameters: {"latitude"=>"46.533", "action"=>"create", "controller"=>"positions", "longitude"=>"6.633"}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'M') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(46.533, '2009-10-28 12:41:20', 'M', '2009-10-28 12:41:20', 6.633)[0m
+Completed in 11ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:41:22) [POST]
+  Parameters: {"latitude"=>"46.550", "action"=>"create", "controller"=>"positions", "longitude"=>"8.550"}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'MZUPP') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(46.55, '2009-10-28 12:41:22', 'MZUPP', '2009-10-28 12:41:22', 8.55)[0m
+Completed in 10ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:41:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.6ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 14:41:25') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 68ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:41:29) [GET]
+  Parameters: {"code"=>"M", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'M') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/M]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:41:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.6ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 14:41:32') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:41:35) [GET]
+  Parameters: {"code"=>"MZUPP", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'MZUPP') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/MZUPP]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:41:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.5ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 14:41:37') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:41:40) [GET]
+  Parameters: {"code"=>"PV", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'PV') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/PV]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:41:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.5ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 14:41:42') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:42:07) [GET]
+  Parameters: {"code"=>"Z", "action"=>"index", "controller"=>"positions"}
+Redirected to http://localhost:3000/Z
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?code=Z]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:42:07) [GET]
+  Parameters: {"code"=>"Z", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'Z') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 69ms (View: 65, DB: 0) | 200 OK [http://localhost/Z]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:42:09) [GET]
+  Parameters: {"code"=>"M", "action"=>"index", "controller"=>"positions"}
+Redirected to http://localhost:3000/M
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?code=M]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:42:09) [GET]
+  Parameters: {"code"=>"M", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'M') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/M]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:42:45) [POST]
+  Parameters: {"latitude"=>"47.366", "action"=>"create", "controller"=>"positions", "longitude"=>"8.533"}
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'WQAUY') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(47.366, '2009-10-28 12:42:45', 'WQAUY', '2009-10-28 12:42:45', 8.533)[0m
+Completed in 11ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:42:47) [POST]
+  Parameters: {"latitude"=>"47.000", "action"=>"create", "controller"=>"positions", "longitude"=>"8.300"}
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'ZIMXD') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(47.0, '2009-10-28 12:42:47', 'ZIMXD', '2009-10-28 12:42:47', 8.3)[0m
+Completed in 11ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:42:49) [POST]
+  Parameters: {"latitude"=>"46.533", "action"=>"create", "controller"=>"positions", "longitude"=>"6.633"}
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'TM') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(46.533, '2009-10-28 12:42:49', 'TM', '2009-10-28 12:42:49', 6.633)[0m
+Completed in 11ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:42:51) [POST]
+  Parameters: {"latitude"=>"46.550", "action"=>"create", "controller"=>"positions", "longitude"=>"8.550"}
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'TGECW') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(46.55, '2009-10-28 12:42:51', 'TGECW', '2009-10-28 12:42:51', 8.55)[0m
+Completed in 10ms (View: 2, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:43:01) [POST]
+  Parameters: {"latitude"=>"47.366", "action"=>"create", "controller"=>"positions", "longitude"=>"8.533"}
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'FIBJ') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(47.366, '2009-10-28 12:43:01', 'FIBJ', '2009-10-28 12:43:01', 8.533)[0m
+Completed in 11ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:43:02) [POST]
+  Parameters: {"latitude"=>"47.000", "action"=>"create", "controller"=>"positions", "longitude"=>"8.300"}
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'EQD') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(47.0, '2009-10-28 12:43:02', 'EQD', '2009-10-28 12:43:02', 8.3)[0m
+Completed in 11ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:43:04) [POST]
+  Parameters: {"latitude"=>"46.533", "action"=>"create", "controller"=>"positions", "longitude"=>"6.633"}
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'JOAP') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(46.533, '2009-10-28 12:43:04', 'JOAP', '2009-10-28 12:43:04', 6.633)[0m
+Completed in 11ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:43:06) [POST]
+  Parameters: {"latitude"=>"46.550", "action"=>"create", "controller"=>"positions", "longitude"=>"8.550"}
+  [4;36;1mPosition Load (0.1ms)[0m   [0;1mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'CFAUV') LIMIT 1[0m
+  [4;35;1mPosition Create (0.3ms)[0m   [0mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude") VALUES(46.55, '2009-10-28 12:43:06', 'CFAUV', '2009-10-28 12:43:06', 8.55)[0m
+Completed in 11ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:43:14) [GET]
+  Parameters: {"code"=>"CFAUV", "action"=>"index", "controller"=>"positions"}
+Redirected to http://localhost:3000/CFAUV
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?code=CFAUV]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:43:14) [GET]
+  Parameters: {"code"=>"CFAUV", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'CFAUV') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/CFAUV]
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePositions (20091028094441)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "spell" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091028094441')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("positions")[0m
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:46:32) [POST]
+  Parameters: {"latitude"=>"47.366", "action"=>"create", "controller"=>"positions", "longitude"=>"8.533"}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'NWDF') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude", "spell") VALUES(47.366, '2009-10-28 12:46:32', 'NWDF', '2009-10-28 12:46:32', 8.533, 'November Whiskey Delta Foxtrot')[0m
+Completed in 11ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:46:34) [POST]
+  Parameters: {"latitude"=>"47.000", "action"=>"create", "controller"=>"positions", "longitude"=>"8.300"}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'KHU') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude", "spell") VALUES(47.0, '2009-10-28 12:46:34', 'KHU', '2009-10-28 12:46:34', 8.3, 'Kilo Hotel Uniform')[0m
+Completed in 11ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:46:37) [POST]
+  Parameters: {"latitude"=>"46.533", "action"=>"create", "controller"=>"positions", "longitude"=>"6.633"}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'SPJY') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude", "spell") VALUES(46.533, '2009-10-28 12:46:37', 'SPJY', '2009-10-28 12:46:37', 6.633, 'Sierra Papa Juliet Yankee')[0m
+Completed in 10ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#create (for 127.0.0.1 at 2009-10-28 13:46:39) [POST]
+  Parameters: {"latitude"=>"46.550", "action"=>"create", "controller"=>"positions", "longitude"=>"8.550"}
+  [4;35;1mPosition Load (0.1ms)[0m   [0mSELECT "positions".id FROM "positions" WHERE ("positions"."code" = 'YBYI') LIMIT 1[0m
+  [4;36;1mPosition Create (0.3ms)[0m   [0;1mINSERT INTO "positions" ("latitude", "created_at", "code", "updated_at", "longitude", "spell") VALUES(46.55, '2009-10-28 12:46:39', 'YBYI', '2009-10-28 12:46:39', 8.55, 'Yankee Bravo Yankee India')[0m
+Completed in 11ms (View: 1, DB: 0) | 201 Created [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:46:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.6ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 14:46:45') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:46:48) [GET]
+  Parameters: {"code"=>"YBYI", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'YBYI') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/YBYI]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:46:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.6ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 14:46:54') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:46:57) [GET]
+  Parameters: {"code"=>"KHU", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'KHU') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/KHU]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:47:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.6ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 14:47:01') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:47:04) [GET]
+  Parameters: {"code"=>"NWDF", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.6ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'NWDF') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/NWDF]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:47:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.6ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 14:47:06') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:47:09) [GET]
+  Parameters: {"code"=>"SPJY", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'SPJY') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/SPJY]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:47:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.7ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 14:47:16') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:47:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.7ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 14:47:53') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:48:11) [GET]
+  Parameters: {"code"=>"YBYI", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'YBYI') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/YBYI]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:48:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.6ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 14:48:15') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:48:18) [GET]
+  Parameters: {"code"=>"SPJY", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'SPJY') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/SPJY]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:49:30) [GET]
+  Parameters: {"code"=>"SPJY", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'SPJY') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+
+ActionView::TemplateError (Missing template positions/_copyright.erb in view path app/views) on line #25 of app/views/layouts/positions.html.erb:
+22: 
+23: <%= yield %>
+24: 
+25: <%= render :partial => 'copyright' %>
+26: <%= render :partial => 'api_doc' %>
+27: 
+28: </body>
+
+    app/views/layouts/positions.html.erb:25
+    app/controllers/positions_controller.rb:27:in `show'
+
+Rendered rescues/_trace (58.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:49:58) [GET]
+  Parameters: {"code"=>"SPJY", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'SPJY') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Rendered positions/_copyright (0.4ms)
+Rendered positions/_api_doc (0.4ms)
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/SPJY]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:50:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.6ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 14:50:14') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Rendered positions/_copyright (0.1ms)
+Rendered positions/_api_doc (0.1ms)
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 13:50:24) [GET]
+  Parameters: {"code"=>"YBYI", "action"=>"index", "controller"=>"positions"}
+Redirected to http://localhost:3000/YBYI
+Completed in 79ms (DB: 0) | 302 Found [http://localhost/?code=YBYI]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 13:50:24) [GET]
+  Parameters: {"code"=>"YBYI", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.5ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'YBYI') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Rendered positions/_copyright (0.1ms)
+Rendered positions/_api_doc (0.0ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/YBYI]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 14:00:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.6ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 15:00:01') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Rendered positions/_copyright (0.1ms)
+Rendered positions/_api_doc (0.1ms)
+Completed in 36ms (View: 29, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 14:00:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.6ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 15:00:03') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Rendered positions/_copyright (0.1ms)
+Rendered positions/_api_doc (0.0ms)
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 14:00:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.6ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 15:00:22') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Rendered positions/_copyright (0.1ms)
+Rendered positions/_api_doc (0.0ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 14:00:35) [GET]
+  Parameters: {"code"=>"YBYI", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'YBYI') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Rendered positions/_copyright (0.1ms)
+Rendered positions/_api_doc (0.0ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/YBYI]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 14:00:45) [GET]
+  Parameters: {"code"=>"YBYI", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'YBYI') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Rendered positions/_copyright (0.1ms)
+Rendered positions/_api_doc (0.0ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/YBYI]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 14:02:46) [GET]
+  Parameters: {"code"=>"YBYI", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'YBYI') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Rendered positions/_copyright (0.1ms)
+Rendered positions/_api_doc (0.0ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/YBYI]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 14:06:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.6ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 15:06:42') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Rendered positions/_copyright (0.1ms)
+Rendered positions/_api_doc (0.0ms)
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 14:06:54) [GET]
+  Parameters: {"code"=>"SPJY", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'SPJY') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Rendered positions/_copyright (0.1ms)
+Rendered positions/_api_doc (0.0ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/SPJY]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 14:08:01) [GET]
+  Parameters: {"code"=>"SPJY", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'SPJY') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Rendered positions/_copyright (0.1ms)
+Rendered positions/_api_doc (0.0ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/SPJY]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "positions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "code" varchar(255), "spell" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (18.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091028094441')[0m
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 14:12:03) [GET]
+  Parameters: {"code"=>"SPJY", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'SPJY') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Rendered positions/_copyright (0.1ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/SPJY]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 14:12:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.6ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 15:12:08') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Rendered positions/_api_doc (0.5ms)
+Rendered positions/_copyright (0.0ms)
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 14:12:16) [GET]
+  Parameters: {"code"=>"YBYI", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'YBYI') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Rendered positions/_copyright (0.1ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/YBYI]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 14:12:20) [GET]
+  Parameters: {"code"=>"TM", "action"=>"index", "controller"=>"positions"}
+Redirected to http://localhost:3000/TM
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?code=TM]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 14:12:20) [GET]
+  Parameters: {"code"=>"TM", "action"=>"show", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.3ms)[0m   [0;1mSELECT * FROM "positions" WHERE (code = 'TM') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Rendered positions/_copyright (0.1ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/TM]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 14:12:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.6ms)[0m   [0mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 15:12:25') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Rendered positions/_api_doc (0.0ms)
+Rendered positions/_copyright (0.0ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 14:12:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"positions"}
+  [4;36;1mPosition Load (0.6ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 15:12:49') [0m
+Rendering template within layouts/positions
+Rendering positions/index
+Rendered positions/_api_doc (0.1ms)
+Rendered positions/_copyright (0.1ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PositionsController#index (for 127.0.0.1 at 2009-10-28 14:12:52) [GET]
+  Parameters: {"code"=>"asfasdf", "action"=>"index", "controller"=>"positions"}
+Redirected to http://localhost:3000/asfasdf
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/?code=asfasdf]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 14:12:52) [GET]
+  Parameters: {"code"=>"asfasdf", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.3ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'asfasdf') LIMIT 1[0m
+  [4;36;1mPosition Load (0.4ms)[0m   [0;1mSELECT * FROM "positions" WHERE (created_at > '2009-09-08 15:12:52') [0m
+Rendering template within layouts/positions
+Rendering positions/show
+Rendered positions/_copyright (0.1ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/asfasdf]
+
+
+Processing PositionsController#show (for 127.0.0.1 at 2009-10-28 14:12:56) [GET]
+  Parameters: {"code"=>"YBYI", "action"=>"show", "controller"=>"positions"}
+  [4;35;1mPosition Load (0.4ms)[0m   [0mSELECT * FROM "positions" WHERE (code = 'YBYI') LIMIT 1[0m
+Rendering template within layouts/positions
+Rendering positions/show
+Rendered positions/_copyright (0.1ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/YBYI]
