@@ -6,6 +6,8 @@ class PositionsController < ApplicationController
     else
       @positions = Position.recent
       create_map_for_positions(@positions)
+      # The center of Switzerland
+      @map.center_zoom_init([46.751153, 8.245239], 8)
 
       respond_to do |format|
         format.html # index.html.erb
@@ -16,15 +18,18 @@ class PositionsController < ApplicationController
 
   def show
     positions = []
-    zoom = 8
     @position = Position.find(:first, :conditions => ["code = ?", params[:code]] )
     if @position
       positions = [@position]
-      zoom = 12 
     else
       positions = Position.recent
     end
-    create_map_for_positions(positions, zoom)
+    create_map_for_positions(positions)
+    if @position
+      @map.center_zoom_init([@position.latitude, @position.longitude], 12)
+    else
+      @map.center_zoom_init([46.751153, 8.245239], 8)
+    end
 
     respond_to do |format|
       format.html # show.html.erb
@@ -46,16 +51,9 @@ class PositionsController < ApplicationController
   
 private
 
-  def create_map_for_positions(positions, zoom = 8)
+  def create_map_for_positions(positions)
     @map = GMap.new("map_div_id")
     @map.control_init(:large_map => true, :map_type => true)
-
-    if positions.count == 1
-      @map.center_zoom_init([positions[0].latitude, positions[0].longitude], zoom)
-    else
-      # The center of Switzerland
-      @map.center_zoom_init([46.751153, 8.245239], zoom)
-    end
 
     positions.each do |position|
       marker = GMarker.new([position.latitude, position.longitude], 
