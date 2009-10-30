@@ -42,7 +42,7 @@ module ActionController
       end
 
       def is_iphone_request?
-        request.user_agent =~ /(Mobile\/.+Safari)/
+        request.user_agent =~ /(AppleWebKit\/.+Mobile)/
       end
       
       def is_iphone_subdomain?
