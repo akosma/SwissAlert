@@ -6,7 +6,7 @@ class Position < ActiveRecord::Base
   def self.recent
     today = Time.new
     seconds = INVALIDATION_TIME_DAYS * 24 * 60 * 60
-    Position.find(:all, :conditions => ["created_at > ?", today - seconds])
+    Position.find(:all, :conditions => ["created_at > ?", today - seconds], :order => "created_at DESC")
   end
 
   def save
@@ -27,7 +27,7 @@ class Position < ActiveRecord::Base
   end
   
   def caption
-    code
+    "#{code} - #{created_at.to_s(:short)}"
   end
   
   def url

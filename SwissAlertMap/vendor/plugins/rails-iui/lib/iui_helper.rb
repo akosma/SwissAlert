@@ -121,7 +121,7 @@ module IuiHelper
       content_tag("a",email,:class=>"ciuServiceLink",:target => "_self",:href => "mailto:#{email}" ,:onclick => "return(navigator.userAgent.indexOf('iPhone') != -1)")
   end
   def servicebutton_map(gadr,caption)
-        content_tag("a",caption,:class=>"ciuServiceButton",:target => "_self",:href => "http://maps.google.com/maps?q=#{gadr}" ,:onclick => "return(navigator.userAgent.indexOf('iPhone') != -1)")
+        content_tag("a",caption,:class=>"ciuServiceButton",:target => "_self",:href => "http://maps.google.com/maps?q=#{gadr}", :escape => false ,:onclick => "return(navigator.userAgent.indexOf('iPhone') != -1)")
   end
   
   def observe_orientation_change(url_options = {})

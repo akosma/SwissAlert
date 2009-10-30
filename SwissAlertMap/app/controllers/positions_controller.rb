@@ -1,3 +1,5 @@
+require "YAML"
+
 class PositionsController < ApplicationController
   acts_as_iphone_controller
 
@@ -37,14 +39,12 @@ class PositionsController < ApplicationController
       format.html # show.html.erb
       format.xml  { render :xml => @position }
       format.iphone do
-        # The show.iphone.erb template depends on a modified version of the iui.js file
-        # taking into account the patch provided here:
-        # http://code.google.com/p/iui/issues/detail?id=102
-        # which basically uses the technique described here
-        # http://www.vulgarisoip.com/2007/06/22/execute-javascript-injected-using-innerhtml-attribute-even-with-safari/
-        # otherwise, the Google Maps javascript would not execute.
-        # This explains also the ":no_load => true" parameter on the view, which avoids
-        # adding the window.onload code to the generated JavaScript.
+        env = ENV['RAILS_ENV'] || RAILS_ENV
+        apikey = YAML.load_file(RAILS_ROOT + '/config/gmaps_api_key.yml')[env]
+        coordinates = "#{@position.latitude},#{@position.longitude}"
+        zoom = 12
+        @image_tag = "<img alt=\"Google Maps image\" src=\"http://maps.google.com/maps/api/staticmap?center=#{coordinates}&zoom=#{zoom}&size=320x416&mobile=true&markers=color:red|label:#{@position.code.first}|#{coordinates}&sensor=false&key=#{apikey}\" width=\"320\" height=\"416\" />"
+        @maps_url = "#{@position.code}@#{coordinates}&z=#{zoom}"
         render :layout => false
       end
     end

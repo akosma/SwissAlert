@@ -9,6 +9,22 @@ body {
     -webkit-text-size-adjust: none;
 }
 
+div.listBottomText {
+  color: gray; 
+  font-size: 12pt; 
+  text-align: center; 
+  width: 300px; 
+  margin: 10px;
+}
+
+div.listTopText {
+  color: gray; 
+  font-size: 12pt; 
+  text-align: center; 
+  width: 300px; 
+  margin: 10px;
+}
+
 body > *:not(.toolbar) {
     display: none;
     position: absolute;
