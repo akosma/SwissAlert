@@ -1,4 +1,5 @@
 class PositionsController < ApplicationController
+  acts_as_iphone_controller
 
   def index
     if params.has_key?(:code)
@@ -12,6 +13,7 @@ class PositionsController < ApplicationController
       respond_to do |format|
         format.html # index.html.erb
         format.xml  { render :xml => @positions }
+        format.iphone
       end
     end
   end
@@ -34,6 +36,17 @@ class PositionsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @position }
+      format.iphone do
+        # The show.iphone.erb template depends on a modified version of the iui.js file
+        # taking into account the patch provided here:
+        # http://code.google.com/p/iui/issues/detail?id=102
+        # which basically uses the technique described here
+        # http://www.vulgarisoip.com/2007/06/22/execute-javascript-injected-using-innerhtml-attribute-even-with-safari/
+        # otherwise, the Google Maps javascript would not execute.
+        # This explains also the ":no_load => true" parameter on the view, which avoids
+        # adding the window.onload code to the generated JavaScript.
+        render :layout => false
+      end
     end
   end
 

@@ -25,6 +25,14 @@ class Position < ActiveRecord::Base
   def creation_time
     created_at.to_s(:long)
   end
+  
+  def caption
+    code
+  end
+  
+  def url
+    code
+  end
 
 private
   
