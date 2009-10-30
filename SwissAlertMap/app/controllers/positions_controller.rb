@@ -1,4 +1,4 @@
-require "YAML"
+require 'yaml'
 
 class PositionsController < ApplicationController
   acts_as_iphone_controller
