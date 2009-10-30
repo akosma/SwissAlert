@@ -5,7 +5,7 @@ class PositionsController < ApplicationController
 
   def index
     if params.has_key?(:code)
-      redirect_to show_url :code => params[:code]
+      redirect_to position_url :code => params[:code]
     else
       @positions = Position.recent
       create_map_for_positions(@positions)
