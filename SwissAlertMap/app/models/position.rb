@@ -1,4 +1,8 @@
 class Position < ActiveRecord::Base
+  validates_presence_of :latitude, :on => :create, :message => "can't be blank"
+  validates_presence_of :longitude, :on => :create, :message => "can't be blank"
+  validates_numericality_of :latitude, :on => :create, :message => "is not a number"
+  validates_numericality_of :longitude, :on => :create, :message => "is not a number"
 
   MAX_CODE_LENGTH = 6
   INVALIDATION_TIME_DAYS = 50

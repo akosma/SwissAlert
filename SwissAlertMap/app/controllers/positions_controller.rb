@@ -5,60 +5,106 @@ class PositionsController < ApplicationController
 
   def index
     if params.has_key?(:code)
-      redirect_to position_url :code => params[:code]
-    else
-      @positions = Position.recent
-      create_map_for_positions(@positions)
-      # The center of Switzerland
-      @map.center_zoom_init([46.751153, 8.245239], 8)
+      redirect_to position_url :code => params[:code].upcase
+      return 
+    end
 
-      respond_to do |format|
-        format.html # index.html.erb
-        format.xml  { render :xml => @positions }
-        format.iphone
-      end
-    end
-  end
-
-  def show
-    positions = []
-    @position = Position.find(:first, :conditions => ["code = ?", params[:code]] )
-    if @position
-      positions = [@position]
-    else
-      positions = Position.recent
-    end
-    create_map_for_positions(positions)
-    if @position
-      @map.center_zoom_init([@position.latitude, @position.longitude], 12)
-    else
-      @map.center_zoom_init([46.751153, 8.245239], 8)
-    end
+    @positions = Position.recent
 
     respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @position }
+      format.html do
+        create_map_for_positions(@positions)
+        # The center of Switzerland
+        @map.center_zoom_init([46.751153, 8.245239], 8)
+      end
+
+      format.xml do
+        render :xml => @positions 
+      end
+
+      format.js do
+        render :json => @positions 
+      end
+
+      format.iphone
+    end
+  end
+  
+  def show
+    @position = Position.find(:first, :conditions => ["code = ?", params[:code].upcase] )
+
+    respond_to do |format|
+      format.html do
+        if @position
+          @positions = [@position]
+          create_map_for_positions(@positions)
+          @map.center_zoom_init([@position.latitude, @position.longitude], 12)
+        else
+          @positions = Position.recent
+          create_map_for_positions(@positions)
+          @map.center_zoom_init([46.751153, 8.245239], 8)
+        end
+      end
+
+      format.xml do
+        if @position
+          render :xml => @position 
+        else
+          render :xml => {"error" => "Not Found"}, :status => 404
+        end
+      end
+
+      format.js do
+        if @position
+          render :json => @position 
+        else
+          render :json => {"error" => "Not Found"}, :status => 404
+        end
+      end
+
       format.iphone do
-        env = ENV['RAILS_ENV'] || RAILS_ENV
-        apikey = YAML.load_file(RAILS_ROOT + '/config/gmaps_api_key.yml')[env]
-        coordinates = "#{@position.latitude},#{@position.longitude}"
-        zoom = 12
-        @image_tag = "<img alt=\"Google Maps image\" src=\"http://maps.google.com/maps/api/staticmap?center=#{coordinates}&zoom=#{zoom}&size=320x416&mobile=true&markers=color:red|label:#{@position.code.first}|#{coordinates}&sensor=false&key=#{apikey}\" width=\"320\" height=\"416\" />"
-        @maps_url = "#{@position.code}@#{coordinates}&z=#{zoom}"
+        if @position
+          env = ENV['RAILS_ENV'] || RAILS_ENV
+          apikey = YAML.load_file(RAILS_ROOT + '/config/gmaps_api_key.yml')[env]
+          coordinates = "#{@position.latitude},#{@position.longitude}"
+          zoom = 12
+          @image_tag = "<img alt=\"Google Maps image\" src=\"http://maps.google.com/maps/api/staticmap?center=#{coordinates}&zoom=#{zoom}&size=320x416&mobile=true&markers=color:red|label:#{@position.code.first}|#{coordinates}&sensor=false&key=#{apikey}\" width=\"320\" height=\"416\" />"
+          @maps_url = "#{@position.code}@#{coordinates}&z=#{zoom}"
+        end
         render :layout => false
       end
     end
   end
 
   def create
-    position = Position.new
-    position.latitude = params[:latitude]
-    position.longitude = params[:longitude]
+    @position = Position.new
+    @position.latitude = params[:latitude]
+    @position.longitude = params[:longitude]
 
-    if position.save
-      render :xml => position, :status => :created, :location => ""
-    else
-      render :xml => position.errors, :status => :unprocessable_entity
+    respond_to do |format|
+      format.html do
+        if @position.save
+          redirect_to position_url :code => @position.code
+        else
+          redirect_to root_url
+        end
+      end
+
+      format.xml do
+        if @position.save
+          render :xml => @position, :status => :created, :location => "" 
+        else
+          render :xml => @position.errors, :status => :unprocessable_entity
+        end
+      end
+      
+      format.js do
+        if @position.save
+          render :json => @position, :status => :created, :location => "" 
+        else
+          render :json => @position.errors, :status => :unprocessable_entity
+        end
+      end
     end
   end
   

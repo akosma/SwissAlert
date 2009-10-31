@@ -1,2 +1,22 @@
-<%= iui_toolbar "SwissAlert Map" %>
-<%= iui_list @positions, :top => "<div class=\"listTopText\">Latest alerts</div>", :bottom => "<div class=\"listBottomText\">In the next screen, touch the map to open it on the \"Maps\" application</div>" %>
+<div class="toolbar">
+    <h1 id="pageTitle">SwissAlert Map</h1>
+    <a id="backButton" class="button" href="#"></a>
+    <a class="button" href="#searchForm">Search</a>
+</div>
+
+<form id="searchForm" class="dialog" action="search" method="POST">
+    <fieldset>
+        <h1>Code Search</h1>
+        <a class="button leftButton" type="cancel">Cancel</a>
+        <a class="button blueButton" type="submit">Search</a>
+        
+        <label>Code:</label>
+        <input type="text" name="code" />
+    </fieldset>
+</form>
+
+<% if @positions.count > 0 %>
+<%= iui_list @positions, :top => "<div class=\"listTopText\">Latest alerts</div>", :bottom => "<div class=\"listBottomText\">In the next screen, touch the map to open it on the \"Maps\" application<br/><br/>Powered by SwissAlert by akosma software. This system is free and provided for the public good. Use wisely.</div>" %>
+<% else %>
+<%= iui_list @positions, :top => "<div class=\"listTopText\">No alerts to display</div>", :bottom => "<div class=\"listBottomText\">Powered by SwissAlert by akosma software. This system is free and provided for the public good. Use wisely.</div>" %>
+<% end %>

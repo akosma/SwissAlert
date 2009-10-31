@@ -1,1 +1,9 @@
-<%= servicebutton_map @maps_url, @image_tag %>
+<% if @position %>
+    <%= servicebutton_map @maps_url, @image_tag %>
+<% else %>
+    <% panel do %>
+        <% fieldset do %>
+            <%= row "Position not found" %>
+        <% end %>
+    <% end %>
+<% end %>
