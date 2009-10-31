@@ -3,9 +3,9 @@
 one:
   latitude: 10.0
   longitude: 10.0
-  code: ehe4rf
+  code: EHERF
 
 two:
   latitude: 20.0
   longitude: 20.0
-  code: abc1
+  code: ABC
