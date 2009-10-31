@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091028094441) do
+ActiveRecord::Schema.define(:version => 20091031103838) do
 
   create_table "positions", :force => true do |t|
     t.float    "latitude"
@@ -19,5 +19,8 @@ ActiveRecord::Schema.define(:version => 20091028094441) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "positions", ["code"], :name => "index_positions_on_code"
+  add_index "positions", ["created_at"], :name => "index_positions_on_created_at"
 
 end
